@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/mont_semibold</item>
+    </style>
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/backgroung_chip_choice</item>
+        <item name="android:textColor">@color/text_chip_choice</item>
+    </style>
+    <style name="chipText" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/mont_semibold</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_courses"
+        android:icon="@drawable/image_courses"
+        android:title="@string/text_menu_courses"/>
+    <item
+        android:id="@+id/menu_events"
+        android:icon="@drawable/image_events"
+        android:title="@string/text_menu_events"/>
+    <item
+        android:id="@+id/menu_schedule"
+        android:icon="@drawable/image_schedule"
+        android:title="@string/text_menu_schedule"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/image_profile"
+        android:title="@string/text_menu_profile"/>
+</menu>

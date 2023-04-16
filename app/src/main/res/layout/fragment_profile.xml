@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <ProgressBar
+        android:id="@+id/progressProfile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutEmptyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="122dp"
+            android:src="@drawable/image_empty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_main"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/text_empty_profile"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="27dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/text_menu_profile2"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainLayoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="31dp"
+                        android:fontFamily="@font/mont_semibold"
+                        android:gravity="center"
+                        android:text="@string/text_name_real"
+                        android:textColor="@color/color_text_main"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edit_text_background">
+
+                        <TextView
+                            android:id="@+id/textNameProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="18dp"
+                            android:layout_marginVertical="17dp"
+                            android:fontFamily="@font/mont_semibold"
+                            android:gravity="center"
+                            android:text="Сокери Артё Алексееви"
+                            android:textColor="@color/color_text_main"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/mont_semibold"
+                                android:gravity="center"
+                                android:text="@string/text_class"
+                                android:textColor="@color/color_text_main"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textClassProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="18dp"
+                                    android:layout_marginVertical="17dp"
+                                    android:fontFamily="@font/mont_semibold"
+                                    android:gravity="center"
+                                    android:text="1Н"
+                                    android:textColor="@color/color_text_main"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/mont_semibold"
+                                android:gravity="center"
+                                android:text="@string/text_age"
+                                android:textColor="@color/color_text_main"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textAgeProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="18dp"
+                                    android:layout_marginVertical="17dp"
+                                    android:fontFamily="@font/mont_semibold"
+                                    android:gravity="center"
+                                    android:text="6"
+                                    android:textColor="@color/color_text_main"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginHorizontal="31dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mont_semibold"
+                        android:gravity="center"
+                        android:text="@string/text_role"
+                        android:textColor="@color/color_text_main"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edit_text_background">
+
+                        <TextView
+                            android:id="@+id/textRoleProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="18dp"
+                            android:layout_marginVertical="17dp"
+                            android:fontFamily="@font/mont_semibold"
+                            android:gravity="center"
+                            android:text="Уеник"
+                            android:textColor="@color/color_text_main"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonGoOutProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="21dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/color_second"
+                        android:fontFamily="@font/mont_bold"
+                        android:padding="15dp"
+                        android:stateListAnimator="@null"
+                        android:text="@string/text_go_out"
+                        android:textAllCaps="false"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:cornerRadius="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginHorizontal="27dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/mont_bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:text="@string/text_passes"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mont_semibold"
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:textColor="@color/color_text_main"
+                                android:text="•"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mont_semibold"
+                                android:textSize="14sp"
+                                android:textColor="@color/color_text_main"
+                                android:text="4 за месяц"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/profilePassesRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginHorizontal="27dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/mont_bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:text="@string/text_debts"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mont_semibold"
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:textColor="@color/color_text_main"
+                                android:text="•"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mont_semibold"
+                                android:textSize="14sp"
+                                android:textColor="@color/color_text_main"
+                                android:text="2 текущих"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/profileDebtsRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

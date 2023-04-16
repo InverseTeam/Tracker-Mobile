@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ScheduleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mont_bold"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:text="@string/text_menu_schedule2"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="27dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/item_course_radius2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_one"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_description_one"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="10sp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="7dp"
+                        android:textColor="@color/color_text_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/data_doc_radius">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mont_semibold"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:lineSpacingExtra="5dp"
+                                    android:textColor="@color/color_main"
+                                    android:text="2022"
+                                    android:paddingVertical="4dp"
+                                    android:paddingHorizontal="17dp"
+                                    android:gravity="left"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buttonDownloadDocument1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/color_main"
+                                android:fontFamily="@font/mont_semibold"
+                                android:text="Скачать"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="16dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:cornerRadius="26dp"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/item_course_radius2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_one"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_description_two"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="10sp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="7dp"
+                        android:textColor="@color/color_text_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/data_doc_radius">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mont_semibold"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:lineSpacingExtra="5dp"
+                                    android:textColor="@color/color_main"
+                                    android:text="2023"
+                                    android:paddingVertical="4dp"
+                                    android:paddingHorizontal="17dp"
+                                    android:gravity="left"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buttonDownloadDocument2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/color_main"
+                                android:fontFamily="@font/mont_semibold"
+                                android:text="Скачать"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="16dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:cornerRadius="26dp"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/item_course_radius2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_two"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_documents_description_three"
+                        android:fontFamily="@font/mont_semibold"
+                        android:textSize="10sp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="7dp"
+                        android:textColor="@color/color_text_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/data_doc_radius">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mont_semibold"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:lineSpacingExtra="5dp"
+                                    android:textColor="@color/color_main"
+                                    android:text="2022"
+                                    android:paddingVertical="4dp"
+                                    android:paddingHorizontal="17dp"
+                                    android:gravity="left"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buttonDownloadDocument3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/color_main"
+                                android:fontFamily="@font/mont_semibold"
+                                android:text="Скачать"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="16dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:cornerRadius="26dp"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

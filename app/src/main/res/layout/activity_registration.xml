@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mont_bold"
+                android:textSize="24sp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/text_registration_title"
+                android:layout_marginHorizontal="31dp"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="21dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationSurname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_surname"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:layout_marginBottom="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_name"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:layout_marginBottom="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationPatronymic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_patronymic"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:layout_marginBottom="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_email"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textRegistrationEmailError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_error_registration_email"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mont_semibold"
+                    android:textColor="@color/color_error"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_password"
+                        android:textColorHint="@color/color_text_main"
+                        android:paddingHorizontal="18dp"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:layout_marginTop="8dp"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textRegistrationPasswordError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_error_registration_password"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mont_semibold"
+                    android:textColor="@color/color_error"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_class"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:layout_marginTop="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textRegistrationClassError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_error_registration_class"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mont_semibold"
+                    android:textColor="@color/color_error"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextRegistrationAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/text_age"
+                        android:textColorHint="@color/color_text_main"
+                        android:fontFamily="@font/mont_regular"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:inputType="number"
+                        android:layout_marginTop="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textRegistrationAgeError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_error_registration_age"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mont_semibold"
+                    android:textColor="@color/color_error"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonRegistration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="21dp"
+                        android:backgroundTint="@color/color_main"
+                        android:fontFamily="@font/mont_bold"
+                        android:padding="15dp"
+                        android:text="@string/text_button_registration"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:cornerRadius="14dp"
+                        android:textAllCaps="false"
+                        android:stateListAnimator="@null"
+                        android:textAppearance="?attr/textAppearanceBody2"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressRegistration"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/buttonTextRegistrationHaveAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mont_semibold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="14dp"
+                    android:layout_gravity="center"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/text_have_account"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginBottom="24dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

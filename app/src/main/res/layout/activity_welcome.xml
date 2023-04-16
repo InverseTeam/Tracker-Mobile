@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image_welcome"
+        android:layout_marginHorizontal="64dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="31dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mont_bold"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:text="@string/text_welcome_title"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/image_text_welcome"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:fontFamily="@font/mont_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/text_welcome_description"
+            android:textColor="@color/color_text_main"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonWelcomeEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/color_main"
+        android:fontFamily="@font/mont_bold"
+        android:padding="15dp"
+        android:text="@string/text_entry"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="14dp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:textAppearance="?attr/textAppearanceBody2"/>
+
+</LinearLayout>

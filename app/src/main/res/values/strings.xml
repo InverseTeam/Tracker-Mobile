@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">InverseTracker</string>
+    <string name="text_entry">Войти</string>
+    <string name="text_button_registration">Регистрация</string>
+    <string name="text_entry_title">Вход</string>
+    <string name="text_registration_title">Регистрация</string>
+    <string name="text_welcome_description">Смотри расписание, узнавай домашку и расти над собой</string>
+    <string name="text_welcome_title">Учись с </string>
+    <string name="text_name">Имя</string>
+    <string name="text_email">Почта</string>
+    <string name="text_surname">Фамилия</string>
+    <string name="text_patronymic">Отчество</string>
+    <string name="text_password">Пароль</string>
+    <string name="text_dont_have_account">Еще нет аккаунта?</string>
+    <string name="text_forget_password"><u>Забыли пароль?</u></string>
+    <string name="text_have_account"><u>Уже есть аккаунт?</u></string>
+    <string name="text_have_account_registration"><u>Регистрация</u></string>
+    <string name="text_dialog_forget_title">Восстановление пароля</string>
+    <string name="text_dialog_forget_description">Для смены пароля нужно обратиться к классному руководителю</string>
+    <string name="text_ok">Хорошо</string>
+    <string name="text_error_entry">Неверная почта или пароль</string>
+    <string name="text_error_registration_email">Введите корректную почту</string>
+    <string name="text_error_registration_password">Минимальный размер 8 символов</string>
+    <string name="text_error_registration_class">Введите корректный класс</string>
+    <string name="text_error_registration_age">Введите корректный возраст</string>
+    <string name="text_menu_courses"><font size="10">Курсы</font></string>
+    <string name="text_menu_events"><font size="10">Новости</font></string>
+    <string name="text_menu_schedule"><font size="10">Документы</font></string>
+    <string name="text_menu_profile"><font size="10">Профиль</font></string>
+    <string name="text_menu_events2">Новости</string>
+    <string name="text_menu_schedule2">Документы</string>
+    <string name="text_menu_profile2">Профиль</string>
+    <string name="text_my_courses">Мои курсы</string>
+    <string name="text_all_courses">Все курсы</string>
+    <string name="text_empty_courses">Вы ещё не посещаете курсы</string>
+    <string name="text_empty_profile">Не удалось загрузить данные \nПопробуйте обновить страницу</string>
+    <string name="text_empty_all_courses">Нет курсов по направлению</string>
+    <string name="text_empty_news">Нет актуальных новостей</string>
+    <string name="text_name_real">Имя</string>
+    <string name="text_class">Класс</string>
+    <string name="text_age">Возраст</string>
+    <string name="text_role">Роль</string>
+    <string name="text_go_out">Выйти</string>
+    <string name="text_exit">Выход</string>
+    <string name="text_exit_description">Вы действительно хотите выйти?</string>
+    <string name="text_yes">Да</string>
+    <string name="text_no">Нет</string>
+    <string name="text_passes">Пропуски</string>
+    <string name="text_debts">Долги</string>
+    <string name="text_all">Все</string>
+    <string name="text_it">IT</string>
+    <string name="text_art">Искусство</string>
+    <string name="text_sport">Спорт</string>
+    <string name="text_natural_science">Естествознание</string>
+    <string name="text_crafts">Промыслы</string>
+    <string name="text_engineer">Инженерия</string>
+    <string name="text_math">Математика</string>
+    <string name="text_astronomy">Астрономия</string>
+    <string name="text_humanitarian">Гумантирные</string>
+    <string name="text_documents_one">Сертификат об окончании курса</string>
+    <string name="text_documents_two">Диплом</string>
+    <string name="text_documents_description_one">Курс \"Мобильная разаработка\"</string>
+    <string name="text_documents_description_two">Курс \"Программирование на Python\"</string>
+    <string name="text_documents_description_three">Диплом участника Уральской проектной смены"</string>
+</resources>
